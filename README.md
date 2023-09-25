@@ -1,4 +1,4 @@
-**# Projeto Biblioteca - Pai 3º Trimestre (FSW)
+# Projeto Biblioteca - Pai 3º Trimestre (FSW)
 
 Tarefas para completar o projeto
 
