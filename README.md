@@ -20,6 +20,7 @@ Tarefas para completar o projeto
 - [x] Implementar LivroService
 - [x] Implementar modelos de respostas
 - [x] Implementar Error Handler
+- [ ] Finalizar LivroController e LivroService
 - [ ] Implementar UserController
 - [ ] Implementar UserService
 - [ ] Separar rotas de livros e usuários
@@ -28,3 +29,9 @@ Tarefas para completar o projeto
 - [ ] Construir startProcess do Fluig
 - [ ] Implementar segurança com JWT
 - [ ] Fazer deploy
+  - [ ] https://render.com/
+  - [ ] Novo Web service
+  - [ ] Build from Git Repository
+  - [ ] Build Command `npm ci && npm run build && npx prisma migrate deploy`
+  - [ ] Start Command `npm run start`
+  - [ ] Adicionar Environment Variables
