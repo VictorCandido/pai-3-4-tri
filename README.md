@@ -20,6 +20,7 @@ Tarefas para completar o projeto
 - [x] Implementar LivroService
 - [x] Implementar modelos de respostas
 - [x] Implementar Error Handler
+- [ ] Revisar conteúdo da última aula
 - [ ] Finalizar LivroController e LivroService
 - [ ] Implementar UserController
 - [ ] Implementar UserService
