@@ -5,8 +5,8 @@ Tarefas para completar o projeto
 - [x] Instalar Node.JS
 - [x] Iniciar projeto Node.JS usando NPM
   - [x] `npm init -y`
-- [x] Instalar o Typescript
-  - [x] `npm i typescript @types/node tsx -D`
+- [x] Instalar o Typescript-D
+  - [x] `npm i typescript @types/node tsx `
 - [x] Configurar o Typescript
   - [x] `npx tsc --init`
   - [x] Editar `"target": "ES2020"` dentro do arquivo `tsconfig.json`
@@ -20,12 +20,12 @@ Tarefas para completar o projeto
 - [x] Implementar LivroService
 - [x] Implementar modelos de respostas
 - [x] Implementar Error Handler
-- [ ] Revisar conteúdo da última aula
-- [ ] Finalizar LivroController e LivroService
+- [x] Revisar conteúdo da última aula
+- [x] Finalizar LivroController e LivroService
 - [ ] Implementar UserController
-- [ ] Implementar UserService
-- [ ] Separar rotas de livros e usuários
-- [ ] Construir regra para emprestar livro
+- [x] Implementar UserService
+- [x] Separar rotas de livros, usuários e biblioteca
+- [x] Construir regra para emprestar livro
 - [ ] Implementar FluigService
 - [ ] Construir startProcess do Fluig
 - [ ] Implementar segurança com JWT

@@ -15,7 +15,7 @@ datasource db {
 model User {
   id   String @id @default(uuid())
   nome String
-  cpf  String
+  cpf  String @unique
 
   Book Book[]
 
