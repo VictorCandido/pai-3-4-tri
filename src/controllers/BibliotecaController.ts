@@ -2,6 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import ResponseModel, { CodeResponseEnum } from "../models/ResponseModel";
 import UserService from "../services/UserService";
 import LivroService from "../services/LivroService";
+import FluigService from "../services/FluigService";
 
 export default class BibliotecaController {
     constructor() {}
@@ -45,7 +46,12 @@ export default class BibliotecaController {
                 throw new ResponseModel(true, CodeResponseEnum.INTERNAL_ERROR, 'Não foi possível atualizar livro. Tente novamente.');
             }
 
-            const response = new ResponseModel(false, CodeResponseEnum.OK, 'Livro emprestado com sucesso', updatedLivro);
+            const fluigService = new FluigService();
+            const processInstanceId = await fluigService.startProcess(updatedLivro.nome);
+
+            const responseData = { ...updatedLivro, processInstanceId };
+
+            const response = new ResponseModel(false, CodeResponseEnum.OK, 'Livro emprestado e solicitação iniciada com sucesso .', responseData);
             res.status(response.getCode()).json(response);
         } catch (error) {
             console.log('[ERROR] - emprestarLivro - LivroController - Falha ao emprestar livro', error);
