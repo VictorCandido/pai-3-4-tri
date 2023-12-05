@@ -7,6 +7,8 @@ export default class AuthMiddleware {
 
     authorize(req: Request, res: Response, next: NextFunction) {
         try {
+            console.log('MANDOU REQUEST PARA GERAR TOKEN');
+
             const authorization = req.headers.authorization || '';
             const { JWT_SECRET, AUTH_USER, AUTH_PASSWORD } = process.env;
 
